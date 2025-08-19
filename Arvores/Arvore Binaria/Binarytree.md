@@ -43,6 +43,32 @@ No nosso exemplo nossa arvore tem 12 nodes ou seja tamanho = 12
 Mas e seu limite de altura?
 Nossa maior altura representa o caminho que vai do N (raiz) até o M, quantas arestas será que tem esse espaço? Isso é simples de resolver, dependendo da marcação usada uma árvore pode representar sua raiz como 0 ou como 1. Caso seja 0 com zero nossa árvore tem 3 niveis (raiz, B -> D, D -> J, J -> M) ou 4 se contar a raiz como 1, sendo raiz N e folha (leaf node) M.
 
+### Mas isso não é uma lista ligada?
+Não e sim, na verdade são bem parecidos os conceitos e inclusive se confude também com Matrizes.
+Árvore binaria é no final das contas quase como um megazorde dos dois conceitos usando o melhor de ambos.
+
+De modo geral listas ligadas ou listas encadeadas são rapidas I/O de dados porém são lentas para acessar dado que precisa ser percorrida. 
+
+Já as matrizes são excelentes para consultas mas alocar memoria ao fazer I/O de dados é custoso porque precisa que elementos sejam movidos de lugar para dar lugar ou assumir lugar de outros.
+
+Então é nesse ponto que a **árvore binaria** brilha!
+Elas são ótimas quando comparadas a matrizes e listas vinculadas porque são TANTO rápidas no acesso a um nó quanto rápidas na hora de excluir ou inserir um nó, sem necessidade de deslocamentos de memória.
+
+## Tipos
+Nessa altura do campeonato vou levantar somente 3 tipos de árvores e cabe a você, jovem garfanho, procurar outros tipos e exemplos.
+
+Os tipos que vamos utilizar nesse artigo serâo:
+- Balanced
+- Full
+- Complete and Balanced
+
+E vamos para os conceitos de cada uma 
+
+### Conceitos de Tipos de Árvores
+1. Balanced: tem no máximo 1 de diferença entre as alturas das subárvores esquerda e direita, para cada node na subarvore.
+2. Full: é um tipo de árvore em que cada nó tem 0 ou 2 nós filhos.
+3. Complete and Balanced: Possui todos os níveis cheios de nós, exceto o **último nível**, que também pode ser completo, ou seja, preenchido da esquerda para a direita. As propriedades de uma Árvore Binária completa significam que ela também é balanceada.
+
 ## Exemplos
 ## Aplicação
 ## Conclusão
