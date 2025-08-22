@@ -6,7 +6,7 @@
 - [ARTIGO: Wikipedia](https://pt.wikipedia.org/wiki/%C3%81rvore_bin%C3%A1ria)
 - [ARTIGO: Elemar Jr](https://elemarjr.com/clube-de-estudos/artigos/introducao-a-arvore-binaria-conceitos-terminologias-e-implementacao/)
 
-
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHo1MXZkZTI4cWo4YjY1bG5pbnkycm5maWcyajV4NWJqbWl1cXNqYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vi5TUmZz8LZb95j2xb/giphy.gif)
 ## Explicação
 Uma arvore binaria é a representação de estrutura de dados em arvore porém sua diferença principal é que cada node tem no **Maximo** duas child nodes.
 
