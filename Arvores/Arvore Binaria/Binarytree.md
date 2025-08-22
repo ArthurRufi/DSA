@@ -65,10 +65,118 @@ Os tipos que vamos utilizar nesse artigo serâo:
 E vamos para os conceitos de cada uma 
 
 ### Conceitos de Tipos de Árvores
-1. Balanced: tem no máximo 1 de diferença entre as alturas das subárvores esquerda e direita, para cada node na subarvore.
-2. Full: é um tipo de árvore em que cada nó tem 0 ou 2 nós filhos.
-3. Complete and Balanced: Possui todos os níveis cheios de nós, exceto o **último nível**, que também pode ser completo, ou seja, preenchido da esquerda para a direita. As propriedades de uma Árvore Binária completa significam que ela também é balanceada.
+1. **Balanced** : tem no máximo 1 de diferença entre as alturas das subárvores esquerda e direita, para cada node na subarvore.
+2. **Full**: é um tipo de árvore em que cada nó tem 0 ou 2 nós filhos.
+3. **Complete and Balanced**: Possui todos os níveis cheios de nós, exceto o **último nível**, que também pode ser completo, ou seja, preenchido da esquerda para a direita. As propriedades de uma Árvore Binária completa significam que ela também é balanceada.
 
 ## Exemplos
+```python
+class RamosDaArvore:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+root = RamosDaArvore('R')
+ramoA = RamosDaArvore('A')
+ramoB = RamosDaArvore('B')
+ramoC = RamosDaArvore('C')
+ramoD = RamosDaArvore('D')
+ramoE = RamosDaArvore('E')
+ramoF = RamosDaArvore('F')
+ramoG = RamosDaArvore('G')
+```
+Acima foi definido o a arvore e seus ramos (nodes) mas cada node tem 2 ou 1 ramo, como nosso software vai saber sobre esses ramos?
+
+De modo grosseiro e nada refinado, ele vai ser tratado e declarado da forma abaixo:
+```python
+root.left = nodeA
+root.right = nodeB
+
+nodeA.left = nodeC
+nodeA.right = nodeD
+
+nodeB.left = nodeE
+nodeB.right = nodeF
+
+nodeF.left = nodeG
+```
+
+O que raios vai acontecer agora?
+
+É left e right para todo lado que estou perdido, o que fazer?
+
+Calma jovem garfanhoto, aqui está tua explicação:
+
+
+```
+O root já tem definido o left e rigth, sendo o ramo a esquerda o nodeA e o ramo a diretia o node B fazendo a seguinte proporção:
+
+    root.left = nodeA
+    root.right = nodeB
+
+    
+------------------------------------------------------------------------------
+
+                                root
+                               /    \
+                           nodeA    nodeB
+```
+
+Legal, concorda?
+
+Vamos para o restante:
+```
+    root.left = nodeA
+    root.right = nodeB
+
+    nodeA.left = nodeC
+    nodeA.right = nodeD
+     
+------------------------------------------------------------------------------
+
+                                root
+                               /    \
+                              /      \
+                          nodeA       nodeB
+                         /     \
+                        /       \
+                    nodeC      nodeD
+```
+Agora parece que está melhorando o entendimento da dinamica:
+```
+    root.left = nodeA
+    root.right = nodeB
+
+    nodeA.left = nodeC
+    nodeA.right = nodeD
+     
+    nodeB.left = nodeE
+    nodeB.right = nodeF
+
+    nodeF.left = nodeG
+------------------------------------------------------------------------------
+
+                                  root
+                               /         \
+                              /           \
+                             /             \
+                        nodeA               nodeB
+                       /     \             /     \
+                      /       \           /       \
+                     /         \         /         \ 
+                nodeC          nodeD | nodeE        nodeF
+                                        /
+                                       /
+                                    nodeG   
+
+```
+Agora sim, consegue visualizar com codigo e grafico como ocorre a construção de uma arvore? Mesmo não estatando exemplificado com sua melhor correspondencia tecnica de codigo.
+
+Podemos refinar mais o codigo ao decorrer do curso.
+
+
 ## Aplicação
+Agora que já sabemos o que é uma arvore, como ela é construida e como isso vai ser definido no nosso codigo de forma geral, vamos agora entender as aplicações praticas e algoritmicas.
+
 ## Conclusão

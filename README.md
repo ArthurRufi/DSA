@@ -8,7 +8,7 @@ Os temas estão separados por pastas, cada pasta vai conter exemplo de algoritim
 
 - [Busca Binaria](https://github.com/ArthurRufi/DSA/tree/main/Busca%20Binaria)
 - [Busca Linear]()
-- []()
+- [Arvore Binaria](https://github.com/ArthurRufi/DSA/tree/main/Arvores/Arvore%20Binaria)
 - []()
 - []()
 - []()
