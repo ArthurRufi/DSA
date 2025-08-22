@@ -179,4 +179,23 @@ Podemos refinar mais o codigo ao decorrer do curso.
 ## Aplicação
 Agora que já sabemos o que é uma arvore, como ela é construida e como isso vai ser definido no nosso codigo de forma geral, vamos agora entender as aplicações praticas e algoritmicas.
 
+### Percorrer uma Arvore Binaria?
+
+Quando queremos percorrer uma arvore binaria temos situações diversas entretanto vamos ficar com as mais populares.
+
+- Busca em Largura
+- Busca em Profundidade 
+
+#### Busca Em Largura
+
+A busca em largura, de forma resumida é quando os nós que estão no mesmo nivel são consultados antes de passar para um proximo nivel, sendo assim a arvore é explorada de forma horizontal.
+
+#### Busca em profundidade 
+
+A busca em profundidade é mais especifica para percorrer a partir de um node, ele vai percorrer galho por galho até acabar aquele galho e passar para o proximo galho.
+
 ## Conclusão
+
+Futuramente teremos modulos para aprofundar os estudos nas buscas em arvores binarias.
+
+Para concluir, as arvores binarias são popularmente usadas na computação e desenvolvimento quando precisamos armazernar urls de forma hierarquica, hierarquia de sites, busca com pré requisitos e ligações e até mesmo em organograma familiar.
