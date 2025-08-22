@@ -1,5 +1,12 @@
 # O que são Arvores Binarias?
 
+## Referencias para estudos
+- [VIDEO: Programação Dinâmica](https://www.youtube.com/watch?v=NpJVZtgSY4U&list=PL5TJqBvpXQv7ipm2exZbbqwpFZc-TZ80s)
+- [VIDEO: Árvore binária em 5 minutos com Java](https://youtu.be/V3T67I9zuNw?si=boHoLvu-85l_M3sB)
+- [ARTIGO: Wikipedia](https://pt.wikipedia.org/wiki/%C3%81rvore_bin%C3%A1ria)
+- [ARTIGO: Elemar Jr](https://elemarjr.com/clube-de-estudos/artigos/introducao-a-arvore-binaria-conceitos-terminologias-e-implementacao/)
+
+
 ## Explicação
 Uma arvore binaria é a representação de estrutura de dados em arvore porém sua diferença principal é que cada node tem no **Maximo** duas child nodes.
 
